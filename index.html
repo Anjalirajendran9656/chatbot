@@ -7752,7 +7752,7 @@ async function sendToAI(message) {
             
             return {
   success: true,
-  response: data.answer || data.response || data.message || data.text || 'Response received',
+  response: data.answer || data.response || data.message || data.text ||data.output || 'Response received',
   metrics: data.metrics || null,
   conversationId: data.conversationId
 };
